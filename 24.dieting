@@ -1,0 +1,7 @@
+disease(heart_disease, low_fat_diet).
+disease(diabetes, low_sugar_diet).
+disease(high_blood_pressure, low_sodium_diet).
+disease(fatty_liver, low_calorie).
+disease(rickets, food_with_vitamin_D).
+disease(beriberi, food_with_vitamin_B1).
+suggest_diet(Disease, Diet) :- disease(Disease, Diet).
